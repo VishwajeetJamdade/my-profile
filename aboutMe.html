@@ -9,6 +9,7 @@
         table,tr,td,th{
             border: 2px solid black;
             border-collapse: collapse;
+            padding: 10px 10px;
         }
         h4{
             color: green;
@@ -21,6 +22,13 @@
         word-spacing: 4px;
         text-shadow: 5px 3px 1px rgba(128, 0, 0, 1);
         }
+    .details span{
+            margin-right: 15px;
+        }
+        .list{
+            word-spacing: 4px;
+        line-height:  2em;
+        }
     </style>
 </head>
 <body>
@@ -29,14 +37,14 @@
     <p>
         <h3>Name : Vishwajeet Jamdade</h3>
     </p>
-    <p>
+    <p class="details">
         <h2 class="heading">Contact Details</h2>
-       <strong>Mobile</strong>:9595967762 <br>
-       <strong>Email</strong> :vishwajeetjamdade@gmail.com
+      <span> <strong>Mobile:</strong></span>  <span>9595967762</span><br> <br>
+       <span><strong>Email:</strong></span> <span>vishwajeetjamdade@gmail.com</span>
     </p>
     <hr>
     <h2 class="heading">My Technology Stack</h2>
-    <ul>
+    <ul class="list">
         <li>HTML</li>
         <li>CSS</li>
         <li>JAVASCRIPT</li>
