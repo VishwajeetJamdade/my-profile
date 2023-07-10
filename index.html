@@ -9,13 +9,14 @@
     <link
       rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <style>
+     
       figcaption {
         display: inline;
         margin-right: 25px;
       }
-      header
+      .head
       {
-        background-color: #D2E9E9;
+        /* background-color: #D2E9E9; */
         color: #27374D;
         /* position: fixed; */
         font-weight: bolder;
@@ -23,94 +24,107 @@
         /* text-align: right; */
         margin-right: 770px;
         margin-top: 10px;
-
       }
-      .navigation
-      {
-        background-color: #C3EDC0;
-        position: absolute;
-       }
-       .navigation a
-       {
-        margin-right: 40px;
-        margin-left: 20px;
-       }
+      nav ul li{
+        display: inline-block;
+        width: 110px;
+        height: 30px;
+        margin-right: 30px;
+        margin-top: 0;
+      }
+      nav ul li a{
+        color: #F15412;
+        font-size: large;
+      }
+      .head span{
+        background-color: #D2E9E9;
+        
+      }
+      
       iframe
       {
+        margin-top: 0;
         background-color: #D6E8DB;
         border: 2px solid #D6E8DB;
       }
       a{
         text-decoration: none;
       }
+      footer ul li 
+      {
+        display: inline;
+        margin-top: 0;
+      }
       footer a{
         color: #ff512f;
         font-size: large;
         margin-right: 20px;
       }
-      footer span 
-      {
-        margin-right: 40px;
-      }
       .btn
       {
         background-color: #0078d0;
-  border: 0;
-  border-radius: 56px;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  outline: 0;
-  padding: 10px 21px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  transition: all .3s;
-  user-select: none;
-  touch-action: manipulation;
+        border: 0;
+        border-radius: 56px;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        outline: 0;
+        padding: 10px 21px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        transition: all .3s;
+        user-select: none;
+        touch-action: manipulation;
+        margin-left: 10px;
       }
 .copyright
 {
+  margin-top: 0;
   margin-left: 300px;
 }
     </style>
   </head>
   <body>
-    <header>
-      <i class="fa fa-user-circle" aria-hidden="true"></i>
+    <header class="head">
+     <span> <i class="fa fa-user-circle" aria-hidden="true"></i>
       <figcaption class="icontext">Vishwajeet Jamdade</figcaption>
       
       <i class="fa fa-phone-square" aria-hidden="true"></i>
       <figcaption class="icontext">9595967762</figcaption>
      
       <i class="fa fa-envelope" aria-hidden="true"></i>
-      <figcaption class="icontext">vishu@gmail.com</figcaption>
+      <figcaption class="icontext">vishu@gmail.com</figcaption></span>
        <a href="assest/Vishwajeet_jamdade_CV .pdf" target="myframe" download="Vishwajeet_resume"></i>
         <button class="btn">
           <i class="fa fa-download" aria-hidden="true"></i>Download Resume</button></a>
     </header>
     <br><br>
     <nav class="navigation">
-      <a href="home.html" target="myframe">HOME</a>
-      <a href="techStack.html" target="myframe">TECH STACK</a>
-      <a href="project.html" target="myframe">PROJECT</a>
-      <a href="education.html" target="myframe">EDUCATION</a>
-      <a href="aboutMe.html" target="myframe">ABOUT ME</a>
+      <ul>
+        <li><a href="home.html" target="myframe">HOME</a></li>
+        <li><a href="techStack.html" target="myframe">TECH STACK</a></li>
+        <li><a href="project.html" target="myframe">PROJECT</a></li>
+        <li><a href="education.html" target="myframe">EDUCATION</a></li>
+        <li><a href="aboutMe.html" target="myframe">ABOUT ME</a></li>
+      </ul>  
     </nav>
     <br /><br />
     <div>
       <iframe width="100%" height="500px" name="myframe" frameborder="0" src="home.html"></iframe>
    
     </div>
-   <footer>
-      <span><strong>Follow Me</strong> </span> 
-    <a href="gh repo clone VishwajeetJamdade/my-profile"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a> 
-    <a href="https://www.linkedin.com/in/vishwajeet-jamdade/"><i class="fa fa-2x fa-linkedin-square" aria-hidden="true"></i></a> 
-    <a href="https://www.instagram.com/"><i class="fa fa-2x fa-instagram" aria-hidden="true"></i></a>
-    <a href="https://www.facebook.com/login/"><i class="fa fa-2x fa-facebook-square" aria-hidden="true"></i></a>
+   <footer> 
+    <span><strong>Follow Me</strong> </span>
+      <ul style="display: inline-block;">
+        <li><a href="gh repo clone VishwajeetJamdade/my-profile"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a> </li>
+        <li> <a href="https://www.linkedin.com/in/vishwajeet-jamdade/"><i class="fa fa-2x fa-linkedin-square" aria-hidden="true"></i></a></li>
+        <li> <a href="https://www.instagram.com/"><i class="fa fa-2x fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.facebook.com/login/"><i class="fa fa-2x fa-facebook-square" aria-hidden="true"></i></a></li>
+      </ul>
    <p class="copyright"> Copyright &copy; 2023 VishwajeetJamdade, Inc. All rights reserved. </p>
    </footer>
   </body>
