@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Application From</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Roboto+Condensed:wght@300&family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
+    <style>
+        label{
+            font-family: 'Poppins', sans-serif;
+            color: #282A3A;
+        }
+        table
+        {
+            background-color: #D6E8DB;    
+            }
+        input[type="email"],[type="password"],[type="text"],[type="number"],[type="file"],[type="date"]
+        {
+            width: 200px;
+            border-radius: 10px;
+            padding: 2px;
+            color: cadetblue;
+            font-weight: bolder;
+            font-size: small;
+            text-transform: uppercase;
+            font-family: 'Poppins', sans-serif;
+        }
+        .textarea
+        {
+            width: 200px;
+            border-radius: 10px;
+            padding: 2px;
+            color: cadetblue;
+            font-weight: bolder;
+            font-size: small;
+            text-transform: uppercase;
+            font-family: 'Poppins', sans-serif; 
+        }
+            .heading {
+        background-color: #454545;
+        color: #f79327;
+        position: relative;
+        letter-spacing: 3px;
+        word-spacing: 4px;
+        text-shadow: 5px 3px 1px rgba(128, 0, 0, 1);
+        font-family: 'Poppins', sans-serif;
+      }  
+      .btn
+      {
+        background-color: #0078d0;
+        border: 0;
+        border-radius: 56px;
+        color: #fff;
+        cursor: pointer;
+        /* display: inline; */
+        font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        outline: 6;
+        padding: 10px 21px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        transition: all .3s;
+        user-select: none;
+        touch-action: manipulation;
+        /* margin-left: 10px; */
+        display: initial;
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+</head>
+<body>    
+    <h2 class="heading">Registration From</h2>
+    <table>
+        <tbody>
+            <tr>
+                <td><label for="#">Full Name</label></td>
+                <td><input type="text" autofocus required maxlength="40"></Input></td>
+            </tr>
+            <tr>
+                <td><label for="#">Email Address</label></td>
+                <td><input type="email" placeholder="abc@gmail.com"></Input></td>
+            </tr>
+            <tr>
+                <td><label for="#">Password</label></td>
+                <td><input type="password" ></td>
+            </tr>
+            <tr>
+                <td><label for="#">Contact Number</label></td>
+                <td><input type="number" ></td>
+            </tr>
+            <tr>
+                <td><label for="#">Profile Photo</label></td>
+                <td><input type="file" ></td>
+            </tr>
+            <tr>
+                <td><label for="#">Date Of Birth</label></td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td><label >Gender</label></td>
+                <td>
+                    <input type="radio" name="Gender"><label for="#">Male</label>
+                    <input type="radio" name="Gender"><label for="#">Female</label>
+                    <input type="radio" name="Gender"><label for="#">Transgender</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="#">Marital Status</label></td>
+                <td>
+                    <input type="radio" name="marrige"><label for="#">Yes</label>
+                    <input type="radio" name="marrige"><label for="#">No</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="#">Knowns Tools & Technology</label></td>
+                <td>
+                    <input type="checkbox"><label for="#">Angular</label>
+                    <input type="checkbox"><label for="#">React</label>
+                    <input type="checkbox"><label for="#">Python</label>
+                    <input type="checkbox"><label for="#">Java</label>
+                    <input type="checkbox"><label for="#">Jenkin</label>
+                    <input type="checkbox"><label for="#">Git</label>
+                    <input type="checkbox"><label for="#">Database</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="#">Designation</label></td>
+                <td>
+                    <select>
+                        <option value="UI Developer">UI Developer</option>
+                        <option value="Backend Developer">Backend Developer</option>
+                        <option value="Full Stack Developer">Full Stack Developer</option>
+                        <option value="DevOps Engineer">DevOps Engineer</option>
+                        <option value="TEster">Tester</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="#">country</label></td>
+                <td><Input type="text" value="India" readonly></Input></td>
+            </tr>
+            <tr>
+                <td><label for="#"> Present Address</label></td>
+                <td>
+                    <textarea  cols="21" rows="7" class="textarea"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><button type="submit" class="btn">Submit</button></td>
+                <td><button type="reset" class="btn">Reset</button></td>
+            </tr>
+           
+        </tbody>
+    
+    </table>
+</body>
+</html>
