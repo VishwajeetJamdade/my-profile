@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assest/profile.jpg" type="image/x-icon">
     <title>My Profile</title>
     
     <link
       rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Roboto+Condensed:wght@300&family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
     <style>
      
       figcaption {
@@ -22,8 +26,13 @@
         font-weight: bolder;
         z-index: 0  ;
         /* text-align: right; */
-        margin-right: 770px;
-        margin-top: 10px;
+        /* margin-right: 770px; */
+        margin-top: 20px;
+      }
+      .navigation
+      {
+        background-color: #EFF5F5;
+        padding: 2px;
       }
       nav ul li{
         display: inline-block;
@@ -35,15 +44,20 @@
       nav ul li a{
         color: #F15412;
         font-size: large;
+        font-family: 'Poppins', sans-serif;
       }
       .head span{
-        background-color: #D2E9E9;
-        
+        background-color: #C2DEDC;
+        padding: 10px;
+        font-size: medium;
+        font-family: 'Poppins', sans-serif;
       }
-      
+      .head a { 
+         display: inline-block;
+      }
       iframe
       {
-        margin-top: 0;
+        margin-top: 5px;
         background-color: #D6E8DB;
         border: 2px solid #D6E8DB;
       }
@@ -60,6 +74,10 @@
         font-size: large;
         margin-right: 20px;
       }
+      footer span
+      {
+        font-family: 'Poppins', sans-serif;
+      }
       .btn
       {
         background-color: #0078d0;
@@ -67,11 +85,11 @@
         border-radius: 56px;
         color: #fff;
         cursor: pointer;
-        display: inline-block;
+        /* display: inline; */
         font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
         font-size: 18px;
         font-weight: 300;
-        outline: 0;
+        outline: 6;
         padding: 10px 21px;
         position: relative;
         text-align: center;
@@ -79,16 +97,47 @@
         transition: all .3s;
         user-select: none;
         touch-action: manipulation;
+        /* margin-left: 10px; */
+        display: initial;
+        font-family: 'Poppins', sans-serif;
+        margin-right: 10px;
         margin-left: 10px;
       }
+      .btn1
+      {
+        background-color: #0078d0;
+        border: 0;
+        border-radius: 56px;
+        color: #fff;
+        cursor: pointer;
+        /* display: inline; */
+        font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        outline: 6;
+        padding: 10px 21px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        transition: all .3s;
+        user-select: none;
+        touch-action: manipulation;
+        /* margin-left: 10px; */
+        display: initial;
+        font-family: 'Poppins', sans-serif;
+        
+      }
+      
 .copyright
 {
   margin-top: 0;
   margin-left: 300px;
+  font-family: 'Poppins', sans-serif;
 }
     </style>
   </head>
   <body>
+    <!-- header section And icons -->
     <header class="head">
      <span> <i class="fa fa-user-circle" aria-hidden="true"></i>
       <figcaption class="icontext">Vishwajeet Jamdade</figcaption>
@@ -98,11 +147,17 @@
      
       <i class="fa fa-envelope" aria-hidden="true"></i>
       <figcaption class="icontext">vishu@gmail.com</figcaption></span>
-       <a href="assest/Vishwajeet_jamdade_CV .pdf" target="myframe" download="Vishwajeet_resume"></i>
+      <!-- button signup -->
+       <a href="registration.html" target="myframe">
         <button class="btn">
-          <i class="fa fa-download" aria-hidden="true"></i>Download Resume</button></a>
+          <i class="fa fa-sign-in" aria-hidden="true"></i>Sign Up</button></a>
+          <!-- button download resume -->
+          <a href="assest/Vishwajeet_jamdade_CV .pdf" target="myframe" download="Vishwajeet_resume">
+            <button class="btn1">
+              <i class="fa fa-download" aria-hidden="true"></i>Download Resume</button></a>
     </header>
-    <br><br>
+    <br>
+                    <!-- Navigation Bar   -->
     <nav class="navigation">
       <ul>
         <li><a href="home.html" target="myframe">HOME</a></li>
@@ -112,11 +167,13 @@
         <li><a href="aboutMe.html" target="myframe">ABOUT ME</a></li>
       </ul>  
     </nav>
-    <br /><br />
+   
     <div>
+      <!-- Iframe  -->
       <iframe width="100%" height="500px" name="myframe" frameborder="0" src="home.html"></iframe>
    
     </div>
+    <!-- footer links and icons -->
    <footer> 
     <span><strong>Follow Me</strong> </span>
       <ul style="display: inline-block;">

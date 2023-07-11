@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Roboto+Condensed:wght@300&family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
     <style>
         table,tr,td,th{
             border: 2px solid black;
@@ -21,14 +24,27 @@
         letter-spacing: 3px;
         word-spacing: 4px;
         text-shadow: 5px 3px 1px rgba(128, 0, 0, 1);
+        font-family: 'Poppins', sans-serif;
         }
     .details span{
             margin-right: 15px;
+            font-family: 'Signika Negative', sans-serif;
+            
         }
-        .list{
+        .list li{
             word-spacing: 4px;
         line-height:  2em;
+        font-family: 'Signika Negative', sans-serif;
         }
+        h3
+        {
+            font-family: 'Poppins', sans-serif;
+        }
+        tit
+      {
+        font-family: 'Poppins', sans-serif;
+       
+      }
     </style>
 </head>
 <body>
@@ -37,8 +53,8 @@
     <p>
         <h3>Name : Vishwajeet Jamdade</h3>
     </p>
+    <h2 class="heading">Contact Details</h2>
     <p class="details">
-        <h2 class="heading">Contact Details</h2>
       <span> <strong>Mobile:</strong></span>  <span>9595967762</span><br> <br>
        <span><strong>Email:</strong></span> <span>vishwajeetjamdade@gmail.com</span>
     </p>
@@ -54,7 +70,7 @@
     <h2 class="heading">Academic Details</h2>
     <table>
         <thead>
-            <tr>
+            <tr class="tit">
                 <th>Sr.No</th>
                 <th>Academic</th>
                 <th>College Name</th>
