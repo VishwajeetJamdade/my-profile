@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Card Design</title>
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chela+One&family=Poppins:wght@200;300;400;500&family=Roboto+Condensed:wght@300&family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
+    <style>
+       .container
+        {
+            border: 1px solid red;
+            margin: 330px 120px 330px 100px;
+            height: 500px;
+            width: 1000px;
+            background-color: pink;
+            border-radius: 33px;
+            box-shadow: 15px 10px 20px #2D4356;
+        }
+        .imgsec
+        {
+            display: inline-block;
+            
+            margin: 30px;
+            padding: 30px;
+            margin-top: 70px;
+           
+        }
+        .contentsec 
+        {
+            float: right;
+            /* border: 2px solid red; */
+            margin-right: 90px;
+            margin-top: 10px;
+           
+        }
+        h2{
+            color: black;
+            font-size: 45px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        .list li
+        {
+            padding: 10px;
+            list-style-type:"✒️";
+        font-family: 'Signika Negative', sans-serif;
+        font-weight: bold;
+        
+        }
+        .list li:hover
+        {
+            color: #CD1818;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .list li:nth-child(even)
+        {
+            background-color: #9DB2BF;
+        }
+        ul li::selection
+        {
+            color: yellow;
+            background-color: #2B2730;
+        }
+        div
+        {
+            display: inline-block;
+        }
+        .po
+        {
+            margin-left: 180px;
+            font-style: italic;
+        }
+        .po i
+        {
+            color: red;
+        }
+        .st{
+            font-family: 'Signika Negative', sans-serif;
+        }
+        a{
+        text-decoration: none;
+      }
+      footer
+      {
+        padding-bottom: 20px;
+      }
+      footer ul li 
+      {
+        display: inline;
+        margin-top: 0;
+      }
+
+      footer a{
+        color: #ff512f;
+        font-size: large;
+        margin-right: 20px;
+      }
+       
+      footer a:hover
+      {
+          color: green;
+      }
+      footer span
+      {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+ <div class="imgsec">
+<img src="assest/my.webp" alt="image" height="300px" width="400px">
+<p class="po">Powered by</i><br>
+    <i class="fa fa-2x fa-certificate" aria-hidden="true"></i><strong class="st">JSoftwareLabs</strong></p>
+ </div>
+ <div class="contentsec">
+    <h2>Compare Text Online</h2>
+    <ul class="list">
+        <li>Compare Text online free</li>
+        <li>Support large file comparison</li>
+        <li>Ignore order and namespaces</li>
+        <li>Side by side dif view</li>
+        <li>Get results in tabular format for quick reference</li>
+        <li>TEXT diff tool</li>
+        <li>REST API</li>
+    </ul>
+    <footer> 
+        <span><strong>Follow Me</strong> </span>
+          <ul style="display: inline-block;">
+            <li><a href="gh repo clone VishwajeetJamdade/my-profile"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a> </li>
+            <li> <a href="https://www.linkedin.com/in/vishwajeet-jamdade/"><i class="fa fa-2x fa-linkedin-square" aria-hidden="true"></i></a></li>
+            <li> <a href="https://www.instagram.com/"><i class="fa fa-2x fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.facebook.com/login/"><i class="fa fa-2x fa-facebook-square" aria-hidden="true"></i></a></li>
+          </ul>
+       </footer>
+ </div>
+
+    </div>
+</body>
+</html>
