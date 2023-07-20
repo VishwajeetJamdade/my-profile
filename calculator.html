@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Roboto+Condensed:wght@300&family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
+        <style>
+ 
+        .box{
+            font-family: 'Signika Negative', sans-serif;
+            color: cadetblue;
+            border: 4px solid black;
+            margin: 450px;
+            background-color: #000;
+            border-radius: 20px;
+            box-shadow: 22px 15px 20px #2D4356;
+            padding: 30px;
+            font-weight: bold;
+        }
+        h2
+        {
+            font-family: 'Roboto Condensed', sans-serif;
+            margin-left: 60px;
+           
+        }
+        label{
+            display: block;
+        }
+        .btn
+        {
+            background-color: #4caf4c;
+        border: 0;
+        border-radius: 56px;
+        color: #fff;
+        cursor: pointer;
+         display: block;
+        font-size: 18px;
+        font-weight: 300;
+        outline: 6;
+        /* padding: 10px 21px; */
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        transition: all .3s;
+        user-select: none;
+        touch-action: manipulation;
+        margin-left: 70px;
+        display: initial;
+        font-family: 'Poppins', sans-serif;
+        width: 200px;
+        margin-bottom: 10px;
+        }
+        .btn:hover
+        {
+            background-color: burlywood;
+            color: #4caf4c;
+        }
+   
+       .inp  {
+            width: 200px;
+            border-radius: 10px;
+            padding: 2px;
+            font-weight: bolder;
+            font-size: small;
+            border-color: #A5C9CA;
+            font-family: 'Poppins', sans-serif;
+            /* margin-left: 70px; */
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>DISCOUNT CALCULATOR</h2>
+        <span class="span1">
+            Enter The Bill Amount and Discount in Percentage
+        </span><br><br>
+        <label>Bill Amount</label>
+        <input type="number" class="inp" required>
+        <br>
+        <label>Discount in Percentage</label>
+        <input type="number" class="inp" required>
+        <br>  <br>
+        <button type="submit" class="btn">Calculate</button>
+         <button type="reset" class="btn">Reset</button><br>
+        <span class="span2">Total Discount Amount</span>
+    </div>
+</body>
+</html>
